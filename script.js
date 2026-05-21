@@ -27,6 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
             accent: '#DE9079',
             neutral: '#F9F9F9',
             dark: '#113236'
+        },
+        'palette-05': {
+            primary: '#156565',
+            accent: '#CB7B66',
+            neutral: '#F3EBE3',
+            dark: '#483A31'
         }
     };
 

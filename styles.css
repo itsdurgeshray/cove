@@ -51,6 +51,14 @@
     --dark-color: #113236;
 }
 
+/* Palette 05 — Classic Cove */
+[data-theme="palette-05"] {
+    --primary-color: #156565;
+    --accent-color: #CB7B66;
+    --neutral-color: #F3EBE3;
+    --dark-color: #483A31;
+}
+
 /* =========================================
    Reset & Base Styles
    ========================================= */
@@ -391,7 +399,7 @@ p {
 
 .tabs {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
 }
 
