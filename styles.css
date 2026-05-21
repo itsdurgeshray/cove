@@ -482,6 +482,270 @@ p {
 }
 
 /* =========================================
+   Amenities Section
+   ========================================= */
+.bg-light {
+    background-color: rgba(0,0,0,0.02);
+}
+
+.amenities {
+    padding: 8rem 0;
+}
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.amenity-item {
+    padding: 2rem;
+    background: #fff;
+    border-radius: var(--border-radius);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.amenity-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.amenity-item svg {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    transition: color var(--transition-speed) var(--transition-ease);
+}
+
+.amenity-item h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.amenity-item p {
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* =========================================
+   Memberships / Pricing Section
+   ========================================= */
+.memberships {
+    padding: 8rem 0;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+.pricing-card {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: var(--border-radius);
+    padding: 3rem 2rem;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.pricing-card.popular {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    padding: 4rem 2rem;
+    transition: border-color var(--transition-speed) var(--transition-ease);
+}
+
+.popular-badge {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: background-color var(--transition-speed) var(--transition-ease);
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.pricing-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 1rem;
+    color: #666;
+}
+
+.price span {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    letter-spacing: -0.03em;
+    transition: color var(--transition-speed) var(--transition-ease);
+}
+
+.pricing-features {
+    list-style: none;
+    margin-bottom: 2.5rem;
+}
+
+.pricing-features li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.03);
+    position: relative;
+    padding-left: 1.8rem;
+    color: #555;
+}
+
+.pricing-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: color var(--transition-speed) var(--transition-ease);
+}
+
+.w-100 {
+    width: 100%;
+}
+
+/* =========================================
+   Testimonials
+   ========================================= */
+.testimonials {
+    padding: 8rem 0;
+}
+
+.testimonial-slider {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.stars {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 5px;
+    transition: color var(--transition-speed) var(--transition-ease);
+}
+
+.quote {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    color: var(--dark-color);
+    font-weight: 500;
+    margin-bottom: 2rem;
+    transition: color var(--transition-speed) var(--transition-ease);
+}
+
+.author strong {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--dark-color);
+}
+
+.author span {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* =========================================
+   Footer
+   ========================================= */
+.footer {
+    background-color: var(--dark-color);
+    color: rgba(255,255,255,0.8);
+    padding: 6rem 0 3rem;
+    transition: background-color var(--transition-speed) var(--transition-ease);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.footer-brand .logo {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.footer-brand p {
+    color: rgba(255,255,255,0.6);
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.footer-links a {
+    display: block;
+    margin-bottom: 0.8rem;
+    color: rgba(255,255,255,0.6);
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.05);
+    color: #fff;
+    outline: none;
+}
+
+.newsletter-form input:focus {
+    border-color: var(--primary-color);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.legal-links a {
+    color: rgba(255,255,255,0.6);
+    margin-left: 1.5rem;
+}
+
+/* =========================================
    Responsive Design
    ========================================= */
 @media (max-width: 992px) {
@@ -507,6 +771,22 @@ p {
         grid-template-columns: repeat(2, 1fr);
     }
     
+    .amenities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-card.popular {
+        padding: 3rem 2rem;
+    }
+    
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
     .mt-offset {
         margin-top: 0;
     }
@@ -524,6 +804,11 @@ p {
 
 @media (max-width: 768px) {
     .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .amenities-grid, 
+    .footer-grid {
         grid-template-columns: 1fr;
     }
     
