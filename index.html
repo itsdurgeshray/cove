@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="palette-03">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cove Office - Premium Workspace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">cove</div>
+            <div class="nav-links">
+                <a href="#" class="active">Spaces</a>
+                <a href="#">Amenities</a>
+                <a href="#">Community</a>
+                <a href="#" class="btn-outline">Book a Tour</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Elevate Your Work</span>
+                <h1>Balanced hospitality with modern workplace sophistication.</h1>
+                <p>Experience a workspace designed for clarity, momentum, and human connection. Welcome to the new standard of premium coworking.</p>
+                <div class="hero-actions">
+                    <button class="btn-primary">Explore Memberships</button>
+                    <button class="btn-secondary">View Gallery</button>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="image-accent-box"></div>
+                <img src="images/image1.jpg" alt="Modern desk layout at Cove Office" class="hero-image" id="heroImg" onerror="this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80'">
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Designed for Focus & Flow</h2>
+                <p>Every detail curated to support your best work.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-img-wrapper">
+                        <img src="images/image2.jpg" alt="Comfortable lounge seating" onerror="this.src='https://images.unsplash.com/photo-1556761175-5973dc0f32b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'">
+                        <div class="feature-overlay"></div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Hospitality-Driven</h3>
+                        <p>Warmth and natural elegance in every interaction and space.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card mt-offset">
+                    <div class="feature-img-wrapper">
+                        <img src="images/image3.jpg" alt="Collaborative meeting rooms" onerror="this.src='https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'">
+                        <div class="feature-overlay"></div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Connected Hub</h3>
+                        <p>Active, clean energy designed to foster community and networking.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-img-wrapper">
+                        <img src="images/image4.jpg" alt="Private focus areas" onerror="this.src='https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'">
+                        <div class="feature-overlay"></div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Deep Work Zones</h3>
+                        <p>Quiet spaces crafted for intense focus and productivity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Palette Switcher Panel (Fixed to Bottom) -->
+    <div class="palette-switcher">
+        <div class="switcher-header">
+            <h4>Brand Palette Explorer</h4>
+            <span class="switcher-subtitle">Interactive preview</span>
+        </div>
+        <div class="tabs">
+            <button class="tab-btn" data-target="palette-01">
+                <div class="color-preview">
+                    <span style="background: #009393;"></span>
+                    <span style="background: #EADCB6;"></span>
+                </div>
+                <span>Urban Focus</span>
+            </button>
+            <button class="tab-btn" data-target="palette-02">
+                <div class="color-preview">
+                    <span style="background: #DE9079;"></span>
+                    <span style="background: #C6A28B;"></span>
+                </div>
+                <span>Core Foundation</span>
+            </button>
+            <button class="tab-btn active" data-target="palette-03">
+                <div class="color-preview">
+                    <span style="background: #C6A28B;"></span>
+                    <span style="background: #D9C3A2;"></span>
+                </div>
+                <span>True Cove</span>
+            </button>
+            <button class="tab-btn" data-target="palette-04">
+                <div class="color-preview">
+                    <span style="background: #05828E;"></span>
+                    <span style="background: #DE9079;"></span>
+                </div>
+                <span>Modern Cove</span>
+            </button>
+        </div>
+        <div class="active-palette-info" id="paletteInfo">
+            <div class="color-swatch">
+                <div class="swatch" style="background: var(--primary-color)"></div>
+                <div><small>Primary</small><span class="hex"></span></div>
+            </div>
+            <div class="color-swatch">
+                <div class="swatch" style="background: var(--accent-color)"></div>
+                <div><small>Accent</small><span class="hex"></span></div>
+            </div>
+            <div class="color-swatch">
+                <div class="swatch border" style="background: var(--neutral-color)"></div>
+                <div><small>Neutral</small><span class="hex"></span></div>
+            </div>
+            <div class="color-swatch">
+                <div class="swatch" style="background: var(--dark-color)"></div>
+                <div><small>Dark</small><span class="hex"></span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
