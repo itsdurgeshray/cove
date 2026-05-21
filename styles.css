@@ -59,6 +59,23 @@
     --dark-color: #483A31;
 }
 
+/* Palette 06 — Architectural Premium */
+[data-theme="palette-06"] { --primary-color: #05828E; --accent-color: #DE9079; --neutral-color: #F7F4EF; --dark-color: #5A3E35; }
+/* Palette 07 — Modern Cove (v2) */
+[data-theme="palette-07"] { --primary-color: #05828E; --accent-color: #DFA08E; --neutral-color: #F8F5F1; --dark-color: #18363A; }
+/* Palette 08 — Hospitality Workspace */
+[data-theme="palette-08"] { --primary-color: #DE9079; --accent-color: #4D8E95; --neutral-color: #FAF6F2; --dark-color: #4B3830; }
+/* Palette 09 — Warm Minimal */
+[data-theme="palette-09"] { --primary-color: #C65D3A; --accent-color: #E2A98B; --neutral-color: #FAF7F3; --dark-color: #7A2E1F; }
+/* Palette 10 — Earthy Calm */
+[data-theme="palette-10"] { --primary-color: #6B7C5A; --accent-color: #D9C3A2; --neutral-color: #F7F4EF; --dark-color: #3A4832; }
+/* Palette 11 — Terracotta Modern */
+[data-theme="palette-11"] { --primary-color: #B7482B; --accent-color: #D8977D; --neutral-color: #FFF8F4; --dark-color: #6A2C23; }
+/* Palette 12 — Desert Warmth */
+[data-theme="palette-12"] { --primary-color: #D1933D; --accent-color: #EADCC6; --neutral-color: #FCF9F5; --dark-color: #7C6046; }
+/* Palette 13 — Raw & Refined */
+[data-theme="palette-13"] { --primary-color: #A35A3F; --accent-color: #C6B7A6; --neutral-color: #F6F3F0; --dark-color: #4B3830; }
+
 /* =========================================
    Reset & Base Styles
    ========================================= */
@@ -399,8 +416,11 @@ p {
 
 .tabs {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     gap: 1rem;
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 5px;
 }
 
 .tab-btn {
@@ -918,6 +938,7 @@ p {
     
     .tabs {
         grid-template-columns: repeat(2, 1fr);
+        max-height: 200px;
     }
     
     .active-palette-info {

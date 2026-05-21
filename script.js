@@ -33,7 +33,15 @@ document.addEventListener('DOMContentLoaded', () => {
             accent: '#CB7B66',
             neutral: '#F3EBE3',
             dark: '#483A31'
-        }
+        },
+        'palette-06': { primary: '#05828E', accent: '#DE9079', neutral: '#F7F4EF', dark: '#5A3E35' },
+        'palette-07': { primary: '#05828E', accent: '#DFA08E', neutral: '#F8F5F1', dark: '#18363A' },
+        'palette-08': { primary: '#DE9079', accent: '#4D8E95', neutral: '#FAF6F2', dark: '#4B3830' },
+        'palette-09': { primary: '#C65D3A', accent: '#E2A98B', neutral: '#FAF7F3', dark: '#7A2E1F' },
+        'palette-10': { primary: '#6B7C5A', accent: '#D9C3A2', neutral: '#F7F4EF', dark: '#3A4832' },
+        'palette-11': { primary: '#B7482B', accent: '#D8977D', neutral: '#FFF8F4', dark: '#6A2C23' },
+        'palette-12': { primary: '#D1933D', accent: '#EADCC6', neutral: '#FCF9F5', dark: '#7C6046' },
+        'palette-13': { primary: '#A35A3F', accent: '#C6B7A6', neutral: '#F6F3F0', dark: '#4B3830' }
     };
 
     // DOM elements for hex display
