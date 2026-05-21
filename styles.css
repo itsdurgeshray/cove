@@ -674,7 +674,7 @@ p {
    Footer
    ========================================= */
 .footer {
-    background-color: var(--dark-color);
+    background-color: var(--primary-color);
     color: rgba(255,255,255,0.8);
     padding: 5rem 0 3rem;
     transition: background-color var(--transition-speed) var(--transition-ease);
@@ -710,7 +710,7 @@ p {
 }
 
 .footer-links a:hover {
-    color: var(--primary-color);
+    color: #fff;
 }
 
 .newsletter-form {
@@ -729,7 +729,7 @@ p {
 }
 
 .newsletter-form input:focus {
-    border-color: var(--primary-color);
+    border-color: #fff;
 }
 
 .footer-bottom {
@@ -777,17 +777,17 @@ p {
                 color var(--transition-speed) var(--transition-ease);
 }
 
-.bg-primary-dark {
-    background-color: var(--dark-color);
+.bg-theme-primary {
+    background-color: var(--primary-color);
     color: var(--neutral-color);
 }
 
-.bg-primary-dark h2 {
+.bg-theme-primary h2 {
     color: var(--neutral-color);
     margin-bottom: 1.5rem;
 }
 
-.bg-primary-dark p {
+.bg-theme-primary p {
     color: rgba(255,255,255,0.8);
     font-size: 1.1rem;
     margin-bottom: 2rem;
